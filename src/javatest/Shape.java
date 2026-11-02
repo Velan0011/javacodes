@@ -8,8 +8,11 @@
 package javatest;
 
 public abstract class Shape {
-    abstract double calculate(int r);
+
     abstract double calculatearea(int l,int b);
+    abstract double calculate(int a);
+   
+    
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Shape obj=new Circle();
@@ -22,10 +25,10 @@ public abstract class Shape {
  class Circle extends Shape{
 	
 
-	@Override
+//	@Override
 	double calculate(int r) {
 		// TODO Auto-generated method stub
-		return 3.14*r*2;
+		return 3.14*r*r;
 	}
 	double calculatearea(int l,int b) {
 	return 0;
@@ -39,4 +42,5 @@ class Rectangle extends Shape{
 	double calculate(int r) {
 	return 0;
 	}
+
 }
